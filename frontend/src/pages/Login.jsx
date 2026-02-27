@@ -2,7 +2,7 @@ import { useState } from "react";
 import { authApi } from "../api/authApi";
 
 export default function Login({ onNavigate }) {
-  const [form, setForm] = useState({ email: "demo@demo.com", password: "demo123" });
+  const [form, setForm] = useState({ email: "testuser", password: "password123" });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -100,7 +100,7 @@ export default function Login({ onNavigate }) {
         </div>
 
         <div className="auth-demo-hint">
-          <span>⚡ Demo credentials:</span> demo@demo.com / demo123
+          <span>⚡ Demo credentials:</span> testuser / password123
         </div>
       </div>
 
